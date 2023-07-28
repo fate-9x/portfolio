@@ -4,10 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Inconsolata:wght@300&display=swap"
+        rel="stylesheet">
 
     <link rel="shortcut icon" href="img/favico.ico">
 
@@ -15,38 +20,87 @@
 </head>
 
 <body>
-    <div class="header">
-        <div id='logo' class='logo'>
-            <div id='rectangle1' class='rectangle1'>
-                <div id='jl' class='jl'>
-                    JL</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="nav">
-        <ul class="nav nav-underline">
+    <div class="nav__container">
+        <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Sobre Mi</a>
+                <a class="nav-link" href="#">About Me</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Mis Proyectos</a>
+                <a class="nav-link" href="#">My Works</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#">Contact</a>
             </li>
         </ul>
     </div>
 
+    <div class="header">
+        <div class="text__header">
+            <div class="svg-computer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="76" height="76"
+                    viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 8l-4 4l4 4" />
+                    <path d="M17 8l4 4l-4 4" />
+                    <path d="M14 4l-4 16" />
+                </svg>
+            </div>
+            <h1 class="title__header">I'm Lucas <br>a software developer</h1>
+            <div class="svg-computer">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices-pc" width="76"
+                    height="76" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 5h6v14h-6z" />
+                    <path d="M12 9h10v7h-10z" />
+                    <path d="M14 19h6" />
+                    <path d="M17 16v3" />
+                    <path d="M6 13v.01" />
+                    <path d="M6 16v.01" />
+                </svg> -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="76" height="76"
+                    viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 8l-4 4l4 4" />
+                    <path d="M17 8l4 4l-4 4" />
+                    <path d="M14 4l-4 16" />
+                </svg>
+            </div>
+
+        </div>
+        <div class="hero__header">
+            <img src="img/Screenshot_1.png" alt="hero">
+        </div>
+    </div>
+
     <main class="container">
+        <section class="about dark-bg">
+            <div class="about__title">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book-2" width="88"
+                        height="88" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z" />
+                        <path d="M19 16h-12a2 2 0 0 0 -2 2" />
+                        <path d="M9 8h6" />
+                    </svg>
+                </div>
+                <h2>About Me</h2>
+            </div>
+        </section>
         <section class="about">
-            <p>Mi nombre es:</p>
+            <div class="about__content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero autem saepe quia nihil
+                    magni. Quis recusandae rerum dolor ut! Fuga, non facilis asperiores debitis et iste nemo voluptates
+                    maiores!</p>
+            </div>
+        </section>
+        <section class="about">
             <div class="about__title">
                 <h2>Jorge Lucas</h2>
-            </div>
-            <div class="about__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vitae iure facilis blanditiis odio sint
-                voluptatibus sed dolores veritatis aut ea, fugiat accusantium? Ratione quam, qui aliquid quae nam rerum.
             </div>
         </section>
     </main>

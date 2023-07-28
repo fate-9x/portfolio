@@ -1,5 +1,5 @@
 :root {
-    --primary: rgb(40, 2, 2);
+    --primary: rgb(34, 2, 2);
     --white_1: rgb(199, 199, 199);
     --white_2: rgb(255, 255, 255);
 }
@@ -9,7 +9,7 @@ body {
     width: 99%;
     height: 100vh;
     color: var(--white_2);
-    font-family: Yeseva One;
+    font-family: 'Inconsolata', monospace;
     position: relative;
     background-size: 400% 400%;
 }
@@ -19,58 +19,70 @@ a {
     color: var(--white_2);
 }
 
-.header {
-    margin: 2rem 0;
-    display: flex;
-    justify-content: center;
-}
-
-.rectangle1 {
-    border-radius: 5rem;
-    background: linear-gradient(180deg, #000 0%, rgba(255, 255, 255, 0.00) 53.13%, #000 100%);
-    text-align: center;
-    height: 7rem;
-    width: 20rem;
-}
-
-.jl {
-    display: inline-block;
-    color: var(--white);
-    font-family: Yeseva One;
-    font-size: 4rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 152.8%;
-    /* 6.112rem */
+.nav__container {
+    position: fixed;
+    display: block;
+    background-color: #000;
+    width: 100%;
+    padding: 0;
+    top: 0;
 }
 
 .nav {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    width: 100%;
     height: 5rem;
-    background-color: #000;
-    opacity: 0.8;
     align-items: center;
-    border-radius: 2rem;
     padding: 0;
+    margin: 0;
 }
 
 .nav-item {
-    font-family: Yeseva One;
     font-size: 1.5rem;
 }
 
-.container {
-    display: flex;
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    border-radius: 0.5rem;
-    background: rgba(0, 0, 0, 0.70);
-    box-shadow: -2px 7px 4px 0px rgba(255, 0, 0, 0.25);
-    width: 80%;
-    margin: 2rem auto;
+    width: 101%;
+}
+
+.text__header {
+    text-align: center;
+}
+
+.title__header {
+    background-color: #000;
+    margin: 0;
+    padding: 4rem;
+    font-size: 3rem;
+}
+
+.hero__header img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    background-color: #000;
+}
+
+.svg-computer {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 101%;
+}
+
+.dark-bg {
+    background-color: #000;
 }
 
 .about {
@@ -81,12 +93,10 @@ a {
 
 .about__title {
     font-size: 2rem;
+    margin: 5rem;
 }
 
 .about__content {
-    background-color: var(--primary);
-    margin: 1rem 2rem;
-    padding: 3rem;
-    border-radius: 2rem;
-    color: var(--white);
+    text-align: center;
+
 }
