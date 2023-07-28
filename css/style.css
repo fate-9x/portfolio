@@ -57,6 +57,7 @@ a {
 .text__header {
     text-align: center;
     width: 100%;
+    margin-top: 5rem;
 }
 
 .title__header {
@@ -86,6 +87,11 @@ a {
         justify-content: center;
         align-items: center;
         width: 47vh;
+    }
+
+    .text__header {
+        text-align: center;
+        width: 100%;
     }
 }
 
